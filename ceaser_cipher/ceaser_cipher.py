@@ -1,6 +1,7 @@
 ALPHABET = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 key = 25
 
+#encryption
 def ceaser_encrypt(plain_text):
     cipher_text = ''
     plain_text = plain_text.upper()
@@ -12,7 +13,7 @@ def ceaser_encrypt(plain_text):
 
     return cipher_text
 
-
+#decryption
 def ceaser_decrypt(cipher_text):
     cipher_text = cipher_text.upper()
     plain_text = ''

@@ -1,5 +1,6 @@
 ALPHABET = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
+#bruteforce
 def crack_ceaser(cipher_text):
     for key in range(len(ALPHABET)):
         plain_text = ''
