@@ -27,12 +27,12 @@ function ceaser_decryption(cipher_text,key){
     for(var i = 0 ; i < cipher_text.length; i++){
         let enChar = cipher_text[i];
         let indexOfChar = ALPHABET.indexOf(enChar);
-        let newIndex = (indexOfChar-key);
-        if (newIndex < 0) {
-            newIndex += len ;
+        index = (indexOfChar-key);
+        if (index < 0) {
+            index += len ;
         }
-        let modu = newIndex % len;
-        let newChar = ALPHABET.charAt(modu);
+        let newIndex = index % len;
+        let newChar = ALPHABET.charAt(newIndex);
         plain_text += newChar;
     }
     return plain_text;
